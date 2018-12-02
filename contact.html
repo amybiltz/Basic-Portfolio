@@ -3,40 +3,54 @@
 
 <head>
   <meta charset="UTF-8">
-
-  <title>Amy Biltz</title>
-  
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Contact | Your Name</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Amy Biltz</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
         <ul>
-                <li><a class="active">Amy Biltz</a></li>
-                <li><a href="#news">About Me</a></li>
-                <li><a href="#contact">Portfolio</a></li>
-                <li><a href="#about">Contact</a></li>
-              </ul>
-
-<h2>Contact Amy</h2>
-
-<form action="/action_page.php">
-First name:<br>
-<input type="text" name="firstname">
-<br>
-Last name:<br>
-<input type="text" name="lastname">
-<br><br>
-</form>
-<form>
-        E-mail:<br>
-        <input type="email" name="email">
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
       </form>
-<p>Message</p>
 
-<form action="/action_page.php">
-  <textarea name="message" rows="10" cols="30"></textarea>
-  <br>
-  <input type="submit">
-</form>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy Amy Biltz
+    </div>
+  </footer>
 </body>
+
 </html>
